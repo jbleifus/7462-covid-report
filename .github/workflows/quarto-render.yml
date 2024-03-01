@@ -1,11 +1,8 @@
-#on:
-#  schedule:
-#    - cron:  '0 22 * * *'
-#  push:
-#    branches: main
-#  workflow_dispatch:
-
 name: Render Report
+
+on:
+  push:
+    branches: main
 
 jobs:
   build-deploy:
